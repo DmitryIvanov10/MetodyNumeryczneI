@@ -18,7 +18,7 @@ def exponent(x, N):
     partSums = []
     for i in range (N):
         sum += (x ** i) / factorial(i)
-        partSums.append(exp(x) - sum)
+        partSums.append(abs(exp(x) - sum)/exp(x))
     return partSums
 
 # Amount of partial sums variables

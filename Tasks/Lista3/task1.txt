@@ -1,0 +1,15 @@
+# Lesson3, Task1 
+
+tp - time of comparing
+tr - time of assigning
+
+i compares n+1 times (from 0 to n) - tp * (n + 1)
+j compares (n+1)*(n+2) / 2 times (from 0 to i (n + 1) times) - tp * ((n+1)*(n+2) / 2)
+
+i assignes n+1 times - tr * (n + 1)
+j assignes (n+1)*(n+2) / 2 times - tr * ((n+1)*(n+2) / 2)
+tab assignes n*(n+1) / 2 times - tr * (n*(n+1) / 2)
+
+Time of the program is:
+t = (O(n) + O(n^2 / 2)) * tp + (O(n) + O(n^2 / 2) + O(n^2 / 2)) * tr
+t = O(n^2 / 2) * (tr + tp)

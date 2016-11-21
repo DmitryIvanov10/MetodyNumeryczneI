@@ -1,8 +1,9 @@
 # Lesson3, Task5
-# numpy is commented since it's not working on my pc
+# Version with timeit
 
 from timeit import timeit
-#from numpy import arange
+from numpy import arange
+from numpy import size
 
 # declare coefficients of the polynom (starting with highest power of the argument)
 coefficients = [6, 5, -13, 1, 1]
@@ -13,12 +14,12 @@ end = 10
 delta = 0.0001
 
 # create list of x values
-#x = arange(start*10000, end*10000)
-i = start
+x = arange(start,end,delta)
+"""i = start
 x = [i]
 while i <= end:
     i += delta
-    x.append(i)
+    x.append(i)"""
 
 def horner_polynom(value, coefficients):
     """Calculate polynom value with Horner algorythm
@@ -33,5 +34,6 @@ def calculate_polynoms(x, coefficients):
     for i in range(len(x)):
         horner_polynom(x[i], coefficients)
 
+# print results - time of the operations using timeit
 print ("Time of operations is {} ms".format(timeit("calculate_polynoms(x, coefficients)", 
-setup = "from __main__ import calculate_polynoms, x, coefficients", number=10) * 100))
+setup = "from __main__ import calculate_polynoms, x, coefficients", number=1) * 1000))

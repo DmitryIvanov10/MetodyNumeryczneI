@@ -3,6 +3,8 @@
 # Import own module 
 import matrix_operations as m_op
 
+from fractions import Fraction
+
 # define minimal determinant
 epsilon = 10 ** (-6)
 
@@ -30,9 +32,15 @@ print ()
 print ("Matrix opposite to A:")
 print ()
 
-if det_A > epsilon:
+det_A = Fraction(det_A).limit_denominator()
+
+if det_A == 0:
+    print ("No opposite matrix.")
+elif det_A > epsilon:
     m_op.print_matrix(A_op)
 else:
     for i in range(0, len(A) - 1):
         for j in range(0, len(A) - 1):
             print ("A_op[{}][{}] = {}".format(i+1, j+1, A_op[i][j]))
+
+

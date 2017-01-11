@@ -24,7 +24,7 @@ m_op.print_matrix(b)
 # first calculations with LU method
 x = m_op.solve_equations_by_LU(A,b)
 r = m_op.subtract_two_dimensional_matricies(b, \
-                     np.dot(A,x))
+                     m_op.matrix_multiplication(A,x))
 
 # print first results
 print("First x:")
@@ -39,10 +39,10 @@ iterations = 1
 # main loop of the iterational answer corrections
 while np.linalg.norm(r) > u * np.linalg.norm(np.dot(A,x)) and \
       np.linalg.norm(r) > u * np.linalg.norm(b):
-    sigma_x = np.dot(m_op.opposite_matrix(A),r)
-    x = m_op.add_two_dimensional_matricies(x, sigma_x)
+    delta_x = m_op.matrix_multiplication(m_op.opposite_matrix(A),r)
+    x = m_op.add_two_dimensional_matricies(x, delta_x)
     r = m_op.subtract_two_dimensional_matricies(b, \
-                     np.dot(A,x))
+                     m_op.matrix_multiplication(A,x))
     iterations += 1
 
 # print results

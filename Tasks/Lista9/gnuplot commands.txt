@@ -1,0 +1,18 @@
+cd 'C:\...'
+
+for fit:
+f(x) = ... (with a,b...)
+fit f(x) 'name.txt' u 1:2 (or other) via a,b ...
+
+for plotting:
+
+set title "title"
+
+set xlabel "..."
+set ylabel "..."
+
+set xr [xmin:xmax]
+set yr [ymin:ymax]
+
+plot f(x)
+plot "name.txt" using 1:2 (or other) with points (or other)

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1484524336 source:c:\users\dmitry\desktop\lista8\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<string>
+	<gsl/gsl_errno.h>
+	<gsl/gsl_interp.h>
+

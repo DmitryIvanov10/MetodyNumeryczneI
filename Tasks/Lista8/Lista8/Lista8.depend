@@ -7,3 +7,12 @@
 	<gsl/gsl_errno.h>
 	<gsl/gsl_interp.h>
 
+1484570514 source:c:\users\dmitry\documents\mine\prog\metodynumerycznei\tasks\lista8\lista8\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<string>
+	<gsl/gsl_errno.h>
+	<gsl/gsl_interp.h>
+	<gsl/gsl_spline.h>
+

@@ -1,6 +1,6 @@
 # Lesson7, Task5
 
-# import ln
+# import functions
 from math import cos
 from math import tan
 from math import asin

@@ -1,0 +1,78 @@
+
+
+*******************************************************************************
+Tue Feb 14 13:06:08 2017
+
+
+FIT:    data read from 'Exam_task1.txt' u 1:2
+        format = x:z
+        x range restricted to [7.00000 : 21.0000]
+BREAK: No data to fit
+
+*******************************************************************************
+Tue Feb 14 13:06:32 2017
+
+
+FIT:    data read from 'Exam_task1.txt' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 4.00000]
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a0 + a1*x + a2*x^2 + a3*x^3
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Tue Feb 14 13:06:58 2017
+
+
+FIT:    data read from 'Exam_task1.txt' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 4.00000]
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a0 + a1*x + a2*x^2 + a3*x^3
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Tue Feb 14 13:08:53 2017
+
+
+FIT:    data read from 'Exam_task1.txt' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 4.00000]
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a3*x**3 + a2*x**2 + a1*x + a0
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2            a3           
+   0 8.0120000000e+03  0.00e+00 1.80e+01  1.000000e+00  1.000000e+00  1.000000e+00  1.000000e+00
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Tue Feb 14 13:09:20 2017
+
+
+FIT:    data read from 'Exam_task1.txt' u 1:2
+        format = x:z
+        x range restricted to [0.00000 : 4.00000]
+        #datapoints = 4
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a3*x**3 + a2*x**2 + a1*x + a0
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a3            a2            a1            a0           
+   0 2.0194839174e-27  0.00e+00 6.01e+01 -1.298824e-14 -9.000000e+00  3.400000e+01  1.000000e+01
+BREAK: Singular matrix in Invert_RtR

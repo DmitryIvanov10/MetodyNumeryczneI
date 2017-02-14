@@ -3,8 +3,7 @@
 # include <fstream>
 # include <string>
 
-# include <gsl/gsl_errno.h>
-//# include <gsl/gsl_interp.h>
+//# include <gsl/gsl_errno.h>
 # include <gsl/gsl_spline.h>
 
 using namespace std;
@@ -44,8 +43,10 @@ int main ()
     gsl_spline * spline_steffen = gsl_spline_alloc(gsl_interp_steffen, n);
     gsl_spline_init(spline_steffen, Re, CD, n);
 
-    cout << "CD (Re = 5.5) = " << gsl_spline_eval(spline_steffen, 5.5, acc) << endl;
-    cout << "CD (Re = 5000) = " << gsl_spline_eval(spline_steffen, 5000, acc) << endl;
+    cout << "CD (Re = 5) = " << gsl_spline_eval(spline_steffen, 5.0, acc) << endl;
+    cout << "CD (Re = 50) = " << gsl_spline_eval(spline_steffen, 50.0, acc) << endl;
+    cout << "CD (Re = 500) = " << gsl_spline_eval(spline_steffen, 500.0, acc) << endl;
+    cout << "CD (Re = 5000) = " << gsl_spline_eval(spline_steffen, 5000.0, acc) << endl;
 
     for (int i = 0; i <= 20000; i+=10)
     {
